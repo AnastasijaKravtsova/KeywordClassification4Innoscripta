@@ -108,6 +108,7 @@
       {
         "url": "http://files.deeppavlov.ai/models/kw_model.tar.gz",
         "subdir": "{MODELS_PATH}"
+      }
     ]
   }
 }
