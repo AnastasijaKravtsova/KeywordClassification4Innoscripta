@@ -7,7 +7,7 @@ I regarded keyword classification as a sequence labeling task. In this way, it b
 Each token in the source sequence must be provided with a tag from a predefined tag set (`B-KEY, I-KEY, O`).
 
 The way I solved the task was the following:
-* I took [the DeepPavlov NER config based on multilingual BERT](https://github.com/deepmipt/DeepPavlov/blob/0.13.0/deeppavlov/configs/ner/ner_ontonotes_bert_mult.json) and adapted it for keywords labeling,
+* I took [the DeepPavlov NER config based on multilingual BERT](https://github.com/deepmipt/DeepPavlov/blob/0.13.0/deeppavlov/configs/ner/ner_ontonotes_bert_mult.json) and adapted it for keywords labeling ([kws_multi_bert.json](kws_multi_bert.json)),
 * prepared the data (preprocessed it and made train/valid/test split in 0.8/0.1/0.1 fraction, see [data_preparation.ipynb](data_preparation.ipynb)),
 * trained the model (you can download it from [here](http://lnsigo.mipt.ru/export/models/keyword_model.tar.gz)).
 
